@@ -1,15 +1,14 @@
 class Supatypa < Formula
   desc "macOS menu bar app that tracks daily typing statistics"
   homepage "https://github.com/dawksh/supatypa"
-  url "https://github.com/dawksh/supatypa/releases/download/v0.1.5/supatypa"
-  sha256 "753b1267010652cc25640e2be813a67f0ac171bc8c6c8e492a9205e7785e0ae6"
+  url "https://github.com/dawksh/supatypa/releases/download/v0.1.6/supatypa"
+  sha256 "e5c39e1d7b0e956f12ba584c552744f546baa3e4f5e019422cf2df6426de72d4"
   license "MIT"
 
   depends_on :macos
 
   def install
     bin.install "supatypa"
-    system "codesign", "--force", "--sign", "-", bin/"supatypa"
     
     binary_path = "#{bin}/supatypa"
     
