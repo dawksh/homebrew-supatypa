@@ -1,8 +1,8 @@
 class Supatypa < Formula
   desc "macOS menu bar app that tracks daily typing statistics"
   homepage "https://github.com/dawksh/supatypa"
-  url "https://github.com/dawksh/supatypa/releases/download/v0.1.4/supatypa"
-  sha256 "e1721aba811449d6e100d144b4e4dedf31fd0f2230f0aca134f742c1ef3727a0"
+  url "https://github.com/dawksh/supatypa/releases/download/v0.1.5/supatypa"
+  sha256 "753b1267010652cc25640e2be813a67f0ac171bc8c6c8e492a9205e7785e0ae6"
   license "MIT"
 
   depends_on :macos
