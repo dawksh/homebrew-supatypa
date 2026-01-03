@@ -25,4 +25,3 @@ The app will appear in your menu bar. On first launch, you'll need to:
 ## Privacy
 
 Supatypa only tracks typing statistics locally. No data is transmitted or stored outside your device. Keyboard events are processed in real-time and only character/word counts are stored.
-
