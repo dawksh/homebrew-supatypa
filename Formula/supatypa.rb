@@ -10,6 +10,16 @@ class Supatypa < Formula
   def install
     bin.install "supatypa"
     system "codesign", "--force", "--sign", "-", bin/"supatypa"
+    
+    binary_path = "#{bin}/supatypa"
+    
+    system "open", "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility"
+    
+    sleep 2
+    
+    system "osascript", "-e", <<~EOS
+      display dialog "Add supatypa to Accessibility:" & return & return & "1. Click the lock icon (if needed) and authenticate" & return & "2. Click the + button" & return & "3. Press Cmd+Shift+G and navigate to: #{binary_path}" & return & "4. Select supatypa and click Open" & return & "5. Enable the toggle next to supatypa" buttons {"OK"} default button 1 with title "Accessibility Permission Required" with icon note
+    EOS
   end
 
   def caveats
