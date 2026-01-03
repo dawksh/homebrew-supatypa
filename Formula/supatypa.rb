@@ -1,8 +1,8 @@
 class Supatypa < Formula
   desc "macOS menu bar app that tracks daily typing statistics"
   homepage "https://github.com/dawksh/supatypa"
-  url "https://github.com/dawksh/supatypa/releases/download/v0.1.1/supatypa"
-  sha256 "4846de420f80bd31cb4319c25b02097517aad869f2303510416c85b543297a93"
+  url "https://github.com/dawksh/supatypa/releases/download/v0.1.4/supatypa"
+  sha256 "e1721aba811449d6e100d144b4e4dedf31fd0f2230f0aca134f742c1ef3727a0"
   license "MIT"
 
   depends_on :macos
@@ -23,7 +23,7 @@ class Supatypa < Formula
       If macOS blocks the app on first launch:
         System Settings → Privacy & Security → Allow Anyway
 
-      Supatypa only stores typing COUNTS, never text.
+      supatypa only stores typing COUNTS, never text.
     EOS
   end
 end
